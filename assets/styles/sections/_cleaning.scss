@@ -1,0 +1,173 @@
+.cleaning {
+    padding: 50px 0;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 40px;
+
+        @include media (tablet-xl) {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+
+    &__item {
+        &__image {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        &__svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &__title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 5px;
+
+            @include media (tablet) {
+                font-size: 16px;
+            }
+        }
+
+        &__descr {
+            display: inline-block;
+            margin-bottom: 25px;
+
+            @include media (tablet) {
+                font-size: 12px;
+            }
+        }
+
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__price {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+
+            @include media (tablet) {
+                font-size: 14px;
+            }
+
+            &-old {
+                color: #B9B9B9;
+                text-decoration: line-through;
+            }
+
+            &-new {
+                font-size: 24px;
+
+                @include media (tablet) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &__btn {
+            font-size: 12px;
+            font-weight: 700;
+            color: $text-color;
+            text-transform: uppercase;
+            width: 167px;
+            height: 45px;
+            border-radius: 7px;
+            background-color: $accent-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .7s all ease-in-out;
+
+            @include media (tablet) {
+                font-size: 10px;
+                width: 120px;
+                height: 40px;
+            }
+
+            &:hover {
+                color: $accent-color;
+                background-color: $main-color;
+            }
+        }
+    }
+
+    &__include {
+        background-color: #E7F3FE;
+        border-radius: 9px;
+        padding: 7px;
+
+        &__wrap {
+            border: 1px dashed #BBD3EA;
+            border-radius: 7px;
+            padding: 26px;
+
+            @include media (tablet-xl) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        &__title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            @include media (tablet) {
+                font-size: 16px;
+            }
+        }
+
+        &__items {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            @include media (tablet-xl) {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding-left: 27px;
+
+            &__text {
+                font-size: 14px;
+                position: relative;
+
+                @include media (laptop) {
+                    font-size: 12px;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background: url(../../assets/images/cleanig__include-check.svg);
+                    width: 17px;
+                    height: 17px;
+                    left: -27px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
