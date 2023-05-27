@@ -342,12 +342,12 @@ template {
 
 html {
   font-family: "Gilroy", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
 
 body {
-  color: #fff;
+  color: #2B2B2B;
 }
 
 h1,
@@ -413,12 +413,8 @@ textarea {
   border: none;
 }
 
-figure {
-  margin: 0;
-}
-
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .header {
@@ -473,8 +469,9 @@ img {
   }
 }
 .header__menu__link {
+  font-size: 14px;
   font-weight: 500;
-  color: #000;
+  color: #2B2B2B;
   transition: 0.7s all ease-in-out;
 }
 .header__menu__link:hover {
@@ -493,6 +490,7 @@ img {
   }
 }
 .header__info__phone {
+  font-size: 14px;
   font-weight: 600;
   color: #000;
   padding-left: 18px;
@@ -542,7 +540,7 @@ img {
   gap: 16px;
   font-weight: 600;
   font-size: 12px;
-  color: #000;
+  color: #2B2B2B;
 }
 .header__lang__item-active {
   color: #DBE3EF;
@@ -572,6 +570,11 @@ img {
 @media (max-width: 1024px) {
   .hamburger {
     display: block;
+  }
+}
+@media (max-width: 480px) {
+  .hamburger {
+    scale: 0.8;
   }
 }
 
@@ -658,4 +661,76 @@ img {
 .hamburger--3dx.is-active .hamburger-inner::after {
   transform: translate3d(0, -10px, 0) rotate(-45deg);
   background-color: #FFCE20;
+}
+
+.hero {
+  padding: 53px 0 315px;
+  background: url(../../assets/images/hero-bg.jpg) center/cover no-repeat;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: 200px;
+  }
+}
+.hero__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hero__title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .hero__title {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 22px;
+  }
+}
+.hero__descr {
+  font-weight: 500;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .hero__descr {
+    font-size: 14px;
+  }
+}
+.hero__btn {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2B2B2B;
+  width: 264px;
+  height: 45px;
+  background-color: #FFCE20;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s all ease-in-out;
+}
+.hero__btn:hover {
+  color: #FFCE20;
+  background-color: #01BCD2;
+}
+@media (max-width: 1024px) {
+  .hero__btn {
+    width: 200px;
+    height: 40px;
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -4,13 +4,13 @@
 
 html {
     font-family: 'Gilroy', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 
 }
 
 body {
-    color: #fff;
+    color: $text-color;
 }
 
 @function toRem($value) {
@@ -80,10 +80,6 @@ textarea {
     border: none;
 }
 
-figure {
-    margin: 0;
-}
-
 img {
-    width: 100%;
+    max-width: 100%;
 }
