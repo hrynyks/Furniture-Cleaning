@@ -385,6 +385,7 @@ a {
 .title {
   font-weight: 600;
   font-size: 36px;
+  line-height: 114.2%;
 }
 @media (max-width: 1024px) {
   .title {
@@ -731,6 +732,104 @@ img {
   .hero__btn {
     width: 200px;
     height: 40px;
+    font-size: 10px;
+  }
+}
+
+.explanation {
+  padding: 60px 0;
+}
+.explanation__title {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.explanation__descr {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+@media (max-width: 768px) {
+  .explanation__descr {
+    font-size: 16px;
+  }
+}
+.explanation__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 1024px) {
+  .explanation__items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.explanation__item {
+  max-width: 360px;
+  width: 100%;
+  background: linear-gradient(149.6deg, #F0F0F0 18.49%, #E6F3FF 71.87%);
+  padding: 30px 30px 30px 100px;
+  position: relative;
+  height: 190px;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .explanation__item {
+    height: 150px;
+  }
+}
+.explanation__item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  z-index: 10;
+}
+.explanation__item-1::after {
+  background: url(../../assets/images/explanation__number-01.svg);
+  width: 90px;
+  height: 46px;
+}
+.explanation__item-2::after {
+  background: url(../../assets/images/explanation__number-02.svg);
+  width: 108px;
+  height: 46px;
+}
+.explanation__item-3::after {
+  background: url(../../assets/images/explanation__number-03.svg);
+  width: 108px;
+  height: 46px;
+}
+.explanation__item__image {
+  width: 59px;
+  height: 59px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 18px;
+  top: 18px;
+}
+.explanation__item__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .explanation__item__title {
+    font-size: 17px;
+  }
+}
+.explanation__item__descr {
+  font-size: 13px;
+  line-height: 160.5%;
+}
+@media (max-width: 768px) {
+  .explanation__item__descr {
     font-size: 10px;
   }
 }/*# sourceMappingURL=main.css.map */

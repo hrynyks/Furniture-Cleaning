@@ -13,10 +13,10 @@ body {
     color: $text-color;
 }
 
-@function toRem($value) {
-    $remValue: ($value / 14) + rem;
-    @return $remValue;
-}
+// @function toRem($value) {
+//     $remValue: ($value / 14) + rem;
+//     @return $remValue;
+// }
 
 h1,
 h2,
@@ -52,6 +52,7 @@ a {
 .title {
     font-weight: 600;
     font-size: 36px;
+    line-height: 114.2%;
     @include media (tablet-xl) {
         font-size: 24px;
     }
@@ -59,8 +60,6 @@ a {
         font-size: 16px;
     }
 }
-
-
 
 
 
