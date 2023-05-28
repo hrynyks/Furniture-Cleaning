@@ -1,0 +1,72 @@
+.result {
+    padding: 30px 0;
+    background-color: #EEF7FF;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        @include media (tablet-xl) {
+            flex-direction: column;
+        }
+    }
+
+    &__content {
+        @include media (tablet-xl) {
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+
+    &__title {
+        margin-bottom: 10px;
+
+        @include media (tablet-xl) {
+            text-align: center;
+        }
+
+        &-span {
+            color: $main-color;
+        }
+
+
+    }
+
+    &__descr {
+        font-size: 14px;
+        line-height: 24px;
+
+        @include media (tablet-xl) {
+            text-align: center;
+        }
+
+        @include media (tablet) {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &-span {
+            font-weight: 700;
+        }
+    }
+
+
+
+    &__image {
+        width: 585px;
+
+        @include media (laptop) {
+            width: 550px;
+        }
+
+        @include media (tablet-xl) {
+            width: 600px;
+        }
+    }
+}
