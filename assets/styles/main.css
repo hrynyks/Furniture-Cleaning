@@ -1116,6 +1116,129 @@ img {
 }
 @media (max-width: 1024px) {
   .result__image {
-    width: 600px;
+    width: 500px;
   }
+}
+@media (max-width: 768px) {
+  .result__image {
+    width: 400px;
+  }
+}
+
+.process {
+  padding: 50px 0;
+}
+.process__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.process__items-top {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1366px) {
+  .process__items-top {
+    grid-template-columns: repeat(4, 240px);
+    gap: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .process__items-top {
+    grid-template-columns: repeat(2, 260px);
+  }
+}
+@media (max-width: 768px) {
+  .process__items-top {
+    grid-template-columns: 260px;
+  }
+}
+.process__items-bot {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+@media (max-width: 1024px) {
+  .process__items-bot {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.process__item-1::before {
+  content: "01";
+}
+.process__item-2::before {
+  content: "02";
+}
+.process__item-3::before {
+  content: "03";
+}
+.process__item-4::before {
+  content: "04";
+}
+.process__item-5::before {
+  content: "05";
+}
+.process__item-6::before {
+  content: "06";
+}
+.process__item-7::before {
+  content: "07";
+}
+.process__item-top {
+  height: 183px;
+  background: url(../../assets/images/process-bg.png) center/cover no-repeat;
+  padding: 42px 16px;
+  border: 1px solid #E7F3FE;
+  border-radius: 9px;
+  position: relative;
+}
+.process__item-top::before {
+  position: absolute;
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFCE20;
+  left: 15px;
+  top: 15px;
+}
+.process__item__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .process__item__title {
+    font-size: 14px;
+  }
+}
+.process__item__descr {
+  font-size: 13px;
+  line-height: 20px;
+}
+@media (max-width: 768px) {
+  .process__item__descr {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+.process__item-bot {
+  width: 258px;
+  height: 148px;
+  background: url(../../assets/images/process-bg.png) center/cover no-repeat;
+  padding: 42px 15px;
+  border: 1px solid #E7F3FE;
+  border-radius: 9px;
+  position: relative;
+}
+.process__item-bot::before {
+  position: absolute;
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFCE20;
+  left: 15px;
+  top: 15px;
 }/*# sourceMappingURL=main.css.map */
